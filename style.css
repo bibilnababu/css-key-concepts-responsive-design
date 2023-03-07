@@ -1,3 +1,5 @@
+@import-normalize;
+
 :root {
     --coral: #F05D5E;
     --teal: #0F7173;
@@ -18,3 +20,76 @@ body {
 img {
     width: 250px;
 }
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Amatic SC', cursive;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    width: 25%; 
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+
+  }
+  
+  .pet-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  /* challenge 3 */
+  h1{
+    font-size:  2.25rem;
+    font-family: 'Kaushan Script', cursive;
+  }
+
+  p{
+    font-size: 0.75rem;
+  }
+
+  /* adding media query */
+
+  @media screen and (min-width:700px){
+    body{
+      font-size: 16px;
+      background-color: #D8A47F;
+    }
+    .card{
+      font-size: 1.2rem;
+      background-color: aqua;
+    }
+  }
+
+  /* hiding cat ipsum */
+  @media screen {
+    p{
+      display: none;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333; /* dark background color */
+      color: #fff; /* light text color */
+    }
+  }
+    
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+  }
+
+
+    
+  
